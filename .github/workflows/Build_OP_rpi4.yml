@@ -5,15 +5,15 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_OP_rpi4
+name: Build_OP_rpi4_0701
 
 on: 
   release:
     types: [published]
 
-  #push:
-    #branches: 
-      #- master
+  push:
+    branches: 
+      - master
 
   #schedule:
     #- cron: 0 8 * * 5
