@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_OP_x86_64_0727
+name: Build_OP_x86_64
 
 on: 
   release:
