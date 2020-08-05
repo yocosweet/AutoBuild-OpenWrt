@@ -71,7 +71,14 @@ jobs:
       run: |
         ./scripts/feeds update -a
         ./scripts/feeds install -a
-        ./scripts/feeds install -a   
+        ./scripts/feeds install -a
+
+    - name: Import external feeds
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/Lienol/openwrt-package package/lienol
+        git clone -b master https://github.com/vernesong/OpenClash.git package/vernesong
+    #    git clone "your_github_link" package/"your_folder_name"        
 
     #- name: Import external feeds
     #  working-directory: ./openwrt
