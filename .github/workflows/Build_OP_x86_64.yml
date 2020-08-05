@@ -83,7 +83,7 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/Lienol/openwrt-package package/lienol
-        git clone -b master https://github.com/vernesong/OpenClash.git package/vernesong
+        git clone -b master https://github.com/vernesong/OpenClash package/vernesong
     #    git clone "your_github_link" package/"your_folder_name"
   
     - name: Configuration Customization - Build_x86_64
