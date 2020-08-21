@@ -77,7 +77,20 @@ jobs:
     #  working-directory: ./openwrt
     #  run: |
     #    git clone https://github.com/Lienol/openwrt-package package/lienol
+<<<<<<< HEAD
     #    git clone "your_github_link" package/"your_folder_name"        
+=======
+    #    git clone "your_github_link" package/"your_folder_name"
+        
+    - name: Import external feeds
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/Lienol/openwrt-package package/lienol
+        git clone -b master https://github.com/vernesong/OpenClash package/vernesong
+        git clone https://github.com/solidus1983/luci-theme-opentomato package/solidus1983
+        git clone https://github.com/yocosweet/openwrt package/yocosweet
+    #    git clone "your_github_link" package/"your_folder_name"
+>>>>>>> parent of d3be9a8... update
   
     - name: Configuration Customization - Build_x86_64
       env:
