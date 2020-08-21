@@ -71,9 +71,6 @@ jobs:
       run: |
         ./scripts/feeds update -a
         ./scripts/feeds install -a
-<<<<<<< HEAD
-        ./scripts/feeds install -a      
-=======
         ./scripts/feeds install -a
 
     - name: Import external feeds
@@ -83,7 +80,6 @@ jobs:
         git clone -b master https://github.com/vernesong/OpenClash package/vernesong 
         git clone https://github.com/yocosweet/openwrt package/yocosweet
     #    git clone "your_github_link" package/"your_folder_name"        
->>>>>>> parent of d3be9a8... update
 
     #- name: Import external feeds
     #  working-directory: ./openwrt
