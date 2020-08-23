@@ -85,7 +85,8 @@ jobs:
       run: |
         git clone https://github.com/Lienol/openwrt-package package/lienol
         git clone -b master https://github.com/vernesong/OpenClash package/vernesong
-        git clone https://github.com/yocosweet/openwrt package/yocosweet
+        git clone https://github.com/siropboy/mypackages package/siropboy
+        git clone https://github.com/kenzok8/openwrt-packages package/kenzok8
     #    git clone "your_github_link" package/"your_folder_name"
   
     - name: Configuration Customization - Build_x86_64_ipv6
