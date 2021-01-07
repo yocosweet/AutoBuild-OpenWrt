@@ -12,12 +12,12 @@ on:
   release:
     types: [published]
 
-  push:
-    branches: 
-      - master
+  #push:
+  #  branches: 
+  #    - master
 
-  schedule:
-    - cron: 0 18 * * 2,5
+  #schedule:
+  #  - cron: 0 18 * * 2,5
   
   #watch:
   #  types: [started]
