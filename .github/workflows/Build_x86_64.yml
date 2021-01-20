@@ -11,9 +11,9 @@ on:
   release:
     types: [published]
 
- push:
-   branches: 
-     - master
+  push:
+    branches: 
+      - master
 
   #schedule:
   #  - cron: 0 18 * * 2,5
@@ -72,6 +72,11 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a   
+        
+    - name: Import external feeds
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/yocosweet/openwrt package/yocosweet         
 
     - name: Configuration Customization - Build_x86_64
       env:
