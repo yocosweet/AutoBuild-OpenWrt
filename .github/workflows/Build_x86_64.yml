@@ -74,11 +74,10 @@ jobs:
         ./scripts/feeds install -a
         
         
-    - name: Import external feeds
-      working-directory: ./openwrt
-      run: |
-        git clone https://github.com/yocosweet/openwrt package/yocosweet
-    #    git clone "your_github_link" package/"your_folder_name"        
+    - name: Import external feeds
+      working-directory: ./openwrt
+      run: |
+        git clone https://github.com/yocosweet/openwrt package/yocosweet        
 
     - name: Configuration Customization - Build_x86_64
       env:
