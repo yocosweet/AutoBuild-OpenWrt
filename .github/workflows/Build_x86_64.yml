@@ -77,13 +77,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/yocosweet/openwrt package/yocosweet
-
-    #- name: Import external feeds
-    #  working-directory: ./openwrt
-    #  run: |
-    #    git clone https://github.com/Lienol/openwrt-package package/lienol
-    #    git clone "your_github_link" package/"your_folder_name"      
+        git clone https://github.com/yocosweet/openwrt package/yocosweet     
 
     - name: Configuration Customization - Build_x86_64
       env:
