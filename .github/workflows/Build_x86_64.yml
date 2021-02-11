@@ -77,7 +77,7 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/yocosweet/openwrt package/yocosweet       
+        git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd    
 
 
     - name: Configuration Customization - Build_x86_64
